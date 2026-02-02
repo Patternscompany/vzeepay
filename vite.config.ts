@@ -3,9 +3,8 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
-// https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: mode === 'production' ? '/vzeepay/' : '/',
+  base: '/', // ✅ ALWAYS '/' for Netlify
   plugins: [
     react(),
     tailwindcss(),
@@ -15,3 +14,4 @@ export default defineConfig(({ mode }) => ({
     outDir: 'dist',
   },
 }));
+
