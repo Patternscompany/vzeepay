@@ -94,9 +94,19 @@ export default function Footer() {
                     <p className="text-sm text-gray-500">
                         © VZEEPAY 2025 - All rights reserved <span className="mx-2">|</span> design by <a href="https://thepatternscompany.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">The Patterns Company</a>
                     </p>
-                    <div className="flex gap-6">
-                        <Link to="/privacy-policy" className="text-sm text-gray-500 hover:text-primary transition-colors">Privacy Policy</Link>
-                        <Link to="/terms-and-conditions" className="text-sm text-gray-500 hover:text-primary transition-colors">Terms</Link>
+                    <div className="flex gap-3">
+                        <a href="https://www.facebook.com/vzeepay" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-500 hover:text-primary transition-colors">
+                            <i className="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/vzeepay" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-500 hover:text-primary transition-colors">
+                            <i className="ri-instagram-fill"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/vzeepay" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-500 hover:text-primary transition-colors">
+                            <i className="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="https://twitter.com/vzeepay" target="_blank" rel="noopener noreferrer" className="text-lg text-gray-500 hover:text-primary transition-colors">
+                            <i className="ri-twitter-fill"></i>
+                        </a>
                     </div>
                 </div>
             </div>
