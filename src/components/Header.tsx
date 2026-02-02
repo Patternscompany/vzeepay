@@ -23,8 +23,8 @@ export default function Header() {
         { name: "Home", href: "/" },
         { name: "Loans", href: "/loans", hasDropdown: true },
         { name: "EMI Calculator", href: "/calculators/home-loan-emi-calculator" },
-        { name: "Legal", href: "/legal" },
-        { name: "Charted", href: "/charted" },
+        { name: "Legal Services", href: "/legal-services" },
+        { name: "Charter Values", href: "/charter-values" },
         { name: "Careers", href: "/careers" },
         { name: "Blog", href: "/blog" },
         { name: "About", href: "/about" },
@@ -48,7 +48,7 @@ export default function Header() {
                     </Link>
 
                     {/* Desktop Navigation */}
-                    <div className="hidden lg:flex items-center gap-8">
+                    <div className="hidden lg:flex items-center gap-5">
                         {navLinks.map((link) => (
                             <div key={link.name} className="relative group">
                                 {link.hasDropdown ? (

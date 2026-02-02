@@ -10,8 +10,8 @@ import About from "@/app/about/page";
 import Contact from "@/app/contact/page";
 import Blog from "@/app/blog/page";
 import Careers from "@/app/careers/page";
-import Charted from "@/app/charted/page";
-import Legal from "@/app/legal/page";
+import Charted from "@/app/charter-values/page";
+import Legal from "@/app/legal-services/page";
 import Apply from "@/app/apply/page";
 import CreditCards from "@/app/credit-cards/page";
 import CreditScore from "@/app/credit-score/page";
@@ -60,8 +60,8 @@ function App() {
                 <Route path="/contact" element={<Layout><Contact /></Layout>} />
                 <Route path="/blog" element={<Layout><Blog /></Layout>} />
                 <Route path="/careers" element={<Layout><Careers /></Layout>} />
-                <Route path="/charted" element={<Layout><Charted /></Layout>} />
-                <Route path="/legal" element={<Layout><Legal /></Layout>} />
+                <Route path="/charter-values" element={<Layout><Charted /></Layout>} />
+                <Route path="/legal-services" element={<Layout><Legal /></Layout>} />
                 <Route path="/apply" element={<Layout><Apply /></Layout>} />
 
                 {/* Credit & Investment pages */}
