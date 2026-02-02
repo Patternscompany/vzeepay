@@ -44,7 +44,7 @@ export default function Footer() {
                     <div className="max-w-md">
                         <Link to="/" className="inline-block">
                             <img
-                                src="/images/logo2.png"
+                                src={`${import.meta.env.BASE_URL}images/logo2.png`}
                                 alt="VZEEPAY Logo"
                                 width={260}
                                 height={65}

@@ -4,7 +4,8 @@ import tailwindcss from '@tailwindcss/vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 
 // https://vitejs.dev/config/
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
+  base: mode === 'production' ? '/vzeepay/' : '/',
   plugins: [
     react(),
     tailwindcss(),
@@ -13,4 +14,4 @@ export default defineConfig({
   build: {
     outDir: 'dist',
   },
-});
+}));

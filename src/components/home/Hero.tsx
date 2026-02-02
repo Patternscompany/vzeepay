@@ -68,7 +68,7 @@ export default function Hero() {
                                 <div className="absolute -bottom-4 -right-4 w-72 h-72 bg-secondary/20 rounded-full blur-3xl opacity-30 animate-pulse delay-1000"></div>
 
                                 <img
-                                    src="/vzee/credit-scor.jpg"
+                                    src={`${import.meta.env.BASE_URL}vzee/credit-scor.jpg`}
                                     alt="VZEEPay Financial Services"
                                     width={700}
                                     height={600}

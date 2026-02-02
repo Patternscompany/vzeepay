@@ -39,7 +39,7 @@ export default function Header() {
                     <Link to="/" className="flex items-center gap-2">
                         {/* Using the text logo approach if image doesn't match perfectly, or keeping image if it is the full logo */}
                         <img
-                            src="/images/logo2.png"
+                            src={`${import.meta.env.BASE_URL}images/logo2.png`}
                             alt="VZEEPAY Logo"
                             width={280}
                             height={70}

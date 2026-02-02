@@ -27,7 +27,7 @@ export default function Testimonials() {
                         </blockquote>
                         <div className="flex items-center gap-4">
                             <div className="h-12 w-12 rounded-full bg-gray-200 overflow-hidden relative">
-                                <img src="/images/tp.avif" alt="Priya Sharma" className="absolute inset-0 h-full w-full object-cover" />
+                                <img src={`${import.meta.env.BASE_URL}images/tp.avif`} alt="Priya Sharma" className="absolute inset-0 h-full w-full object-cover" />
                             </div>
                             <div>
                                 <div className="font-bold text-gray-900">Priya Sharma</div>
@@ -40,13 +40,13 @@ export default function Testimonials() {
                         <TestimonialCard
                             name="Rahul Verma"
                             role="Tech Lead, Hyderabad"
-                            image="/images/tp.avif"
+                            image={`${import.meta.env.BASE_URL}images/tp.avif`}
                             text="I check my credit score monthly on VZEEPAY. Their personalized tips helped me improve my score from 720 to 815 in just 6 months."
                         />
                         <TestimonialCard
                             name="Anand Dora"
                             role="Business Owner, Pune"
-                            image="/images/tp.avif"
+                            image={`${import.meta.env.BASE_URL}images/tp.avif`}
                             text="Needed a business loan urgently for expansion. VZEEPAY matched me with the right lender and I got funds disbursed within 48 hours."
                         />
                     </div>

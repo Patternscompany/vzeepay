@@ -1,4 +1,6 @@
-﻿export default function Page() {
+﻿import { Link } from "react-router-dom";
+
+export default function Page() {
   return (
     <section className="bg-[#fff7f0]">
       <div className="container-custom py-20">
@@ -152,13 +154,13 @@
 
         {/* Policies & Resources */}
         <div className="mt-8 grid md:grid-cols-2 gap-4">
-          <a href="/privacy-policy" className="p-6 bg-white rounded-lg border hover:shadow transition">Privacy Policy</a>
-          <a href="/terms-and-conditions" className="p-6 bg-white rounded-lg border hover:shadow transition">Terms & Conditions</a>
+          <Link to="/privacy-policy" className="p-6 bg-white rounded-lg border hover:shadow transition">Privacy Policy</Link>
+          <Link to="/terms-and-conditions" className="p-6 bg-white rounded-lg border hover:shadow transition">Terms & Conditions</Link>
         </div>
 
         {/* CTA */}
         <div className="mt-12 text-center">
-          <a href="/contact" className="inline-block px-8 py-3 bg-primary text-white rounded-full font-semibold hover:bg-primaryLight">Contact our Legal Team</a>
+          <Link to="/contact" className="inline-block px-8 py-3 bg-primary text-white rounded-full font-semibold hover:bg-primaryLight">Contact our Legal Team</Link>
         </div>
       </div>
     </section>

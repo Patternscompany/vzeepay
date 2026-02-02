@@ -9,7 +9,7 @@ export default function Company() {
                     <div className="relative">
                         <div className="absolute -inset-4 rounded-3xl bg-gradient-to-r from-primary/20 to-secondary/20 blur-2xl"></div>
                         <img
-                            src="/vzee/fj.png"
+                            src={`${import.meta.env.BASE_URL}vzee/fj.png`}
                             alt="VZEEPAY Team"
                             width={600}
                             height={600}

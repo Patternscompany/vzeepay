@@ -15,7 +15,7 @@ export default function About() {
                     <div className="grid lg:grid-cols-2 gap-12 items-center">
                         <div className="relative h-[400px] w-full rounded-3xl overflow-hidden shadow-2xl">
                             <img
-                                src="/vzee/fj.png"
+                                src={`${import.meta.env.BASE_URL}vzee/fj.png`}
                                 alt="Our Team"
                                 className="absolute inset-0 h-full w-full object-cover"
                             />

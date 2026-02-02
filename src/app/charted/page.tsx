@@ -1,4 +1,6 @@
-﻿export default function Page() {
+﻿import { Link } from "react-router-dom";
+
+export default function Page() {
   return (
     <section className="bg-white">
       <div className="container-custom py-20">
@@ -81,7 +83,7 @@
 
         {/* CTA */}
         <div className="mt-12 text-center">
-          <a href="/contact" className="inline-block px-8 py-3 bg-primary text-white rounded-full font-semibold hover:bg-primaryLight">Get in touch</a>
+          <Link to="/contact" className="inline-block px-8 py-3 bg-primary text-white rounded-full font-semibold hover:bg-primaryLight">Get in touch</Link>
         </div>
       </div>
     </section>
