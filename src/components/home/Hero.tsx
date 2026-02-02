@@ -26,7 +26,7 @@ export default function Hero() {
                             </div>
 
                             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl md:text-6xl lg:text-7xl">
-                                <span className="block">Smart Financial</span>
+                                <span className="block">Smarts Financial</span>
                                 <span className="relative mt-2 block">
                                     <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Decisions Start Here</span>
                                     <svg className="absolute left-0 -bottom-2 w-full opacity-30 text-primary" height="8" viewBox="0 0 250 8" preserveAspectRatio="none">
