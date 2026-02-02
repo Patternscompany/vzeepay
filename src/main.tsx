@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App.tsx';
 import './app/globals.css';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
     <React.StrictMode>
-        <HashRouter basename={import.meta.env.DEV ? '/' : '/vzeepay'}>
+        <BrowserRouter basename={import.meta.env.DEV ? '/' : '/vzeepay'}>
             <App />
-        </HashRouter>
+        </BrowserRouter>
     </React.StrictMode>
 );
