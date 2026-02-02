@@ -105,7 +105,7 @@ function ArchCarousel({ items }: { items: { name: string, src: string, width: nu
                     >
                         <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-sm border border-gray-100 p-2 sm:p-3 flex items-center justify-center transition-all hover:scale-110">
                             <img
-                                src={item.src}
+                                src={`${import.meta.env.BASE_URL}${item.src.startsWith('/') ? item.src.slice(1) : item.src}`}
                                 alt={item.name}
                                 width={item.width}
                                 height={40}
