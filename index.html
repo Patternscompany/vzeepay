@@ -18,6 +18,22 @@
 </head>
 
 <body>
+  <!-- If GitHub Pages redirected here from 404, it will include ?p=<original-path>. Restore it so React Router sees the correct path -->
+  <script>
+    (function () {
+      try {
+        var params = new URLSearchParams(window.location.search);
+        var p = params.get('p');
+        if (p) {
+          // Replace the current history entry with the original path
+          window.history.replaceState({}, '', p);
+        }
+      } catch (e) {
+        // ignore
+      }
+    })();
+  </script>
+
   <div id="root"></div>
   <script type="module" src="./src/main.tsx"></script>
 </body>
