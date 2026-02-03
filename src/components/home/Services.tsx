@@ -33,21 +33,22 @@ export default function Services() {
                 </div>
 
                 {/* Tabs */}
-                <div className="flex justify-center mb-12 overflow-x-auto pb-4">
-                    <div className="inline-flex rounded-full bg-gray-100 p-1">
-                        {tabs.map((tab) => (
-                            <button
-                                key={tab.id}
-                                onClick={() => setActiveTab(tab.id)}
-                                className={`flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-all duration-200 ${activeTab === tab.id
-                                    ? "bg-white shadow text-primary"
-                                    : "text-gray-600 hover:text-gray-900"
-                                    }`}
-                            >
-                                <span className="text-lg">{tab.icon}</span>
-                                <span className="whitespace-nowrap">{tab.label}</span>
-                            </button>
-                        ))}
+                <div className="mb-12 pb-4 -mx-4 sm:mx-0">
+                    <div className="overflow-x-auto px-4 sm:px-0">
+                        <div className="inline-flex items-center gap-2 rounded-full bg-gray-100 p-1 min-w-max snap-x snap-mandatory">
+                            {tabs.map((tab) => {
+                                return (
+                                    <button
+                                        key={tab.id}
+                                        onClick={() => setActiveTab(tab.id)}
+                                        className={`flex snap-start items-center gap-2 rounded-full px-6 py-3 text-sm font-medium transition-all duration-200 ${activeTab === tab.id ? "bg-white shadow text-primary" : "text-gray-600 hover:text-gray-900"}`}
+                                    >
+                                        <span className="text-lg">{tab.icon}</span>
+                                        <span className="whitespace-nowrap">{tab.label}</span>
+                                    </button>
+                                );
+                            })}
+                        </div>
                     </div>
                 </div>
 
