@@ -14,6 +14,7 @@ export default function Services() {
         { id: "home-loan", label: "Home Loan", icon: "🏠" },
         { id: "personal-loan", label: "Personal Loan", icon: "💰" },
         { id: "business-loan", label: "Business Loan", icon: "💼" },
+        { id: "vehicle-loan", label: "Vehicle Loan", icon: "🚗" },
     ];
 
     return (
@@ -58,7 +59,7 @@ export default function Services() {
                         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 animate-in fade-in slide-in-from-bottom-4 duration-500 justify-center">
                             <ServiceCard
                                 title="Home Loans"
-                                desc="Lowest rates starting @ 8.40% | Tenure up to 30 years"
+                                desc="Lowest rates starting @ 7.05% | Tenure up to 30 years"
                                 href="/loans/home-loan"
                                 icon={<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />}
                             />
@@ -118,6 +119,24 @@ export default function Services() {
                                     className="btn-primary inline-flex items-center gap-2 rounded-full px-8 py-3 bg-primary text-white font-semibold hover:bg-primaryLight transition-colors"
                                 >
                                     Apply for Business Loan
+                                </button>
+                            </div>
+                        </div>
+                    )}
+                    {activeTab === "vehicle-loan" && (
+                        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2 animate-in fade-in slide-in-from-bottom-4 duration-500 justify-center max-w-4xl mx-auto">
+                            <ServiceCard
+                                title="Vehicle Loans"
+                                desc="Competitive rates for new and used vehicles | Quick approvals"
+                                href="/loans/vehicle-loan"
+                                icon={<path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 13l1.664-1.664a4 4 0 015.656 0L12 14m-9 0l1.5 1.5m7.5-7.5l1.5 1.5m-10.5 6l1.5 1.5m7.5-7.5l1.5 1.5M16 16h2a2 2 0 002-2v-4a2 2 0 00-2-2h-2m-4 8h4m0 0h1a2 2 0 002-2v-4a2 2 0 00-2-2h-1m-4 8h4" />}
+                            />
+                            <div className="col-span-full text-center mt-8">
+                                <button
+                                    onClick={() => openQuoteForm("Vehicle Loan Application")}
+                                    className="btn-primary inline-flex items-center gap-2 rounded-full px-8 py-3 bg-primary text-white font-semibold hover:bg-primaryLight transition-colors"
+                                >
+                                    Apply for Vehicle Loan
                                 </button>
                             </div>
                         </div>

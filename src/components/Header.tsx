@@ -23,8 +23,6 @@ export default function Header() {
         { name: "Home", href: "/" },
         { name: "Loans", href: "/loans", hasDropdown: true },
         { name: "EMI Calculator", href: "/calculators/home-loan-emi-calculator" },
-        { name: "Legal Services", href: "/legal-services" },
-        { name: "Charter Values", href: "/charter-values" },
         { name: "Careers", href: "/careers" },
         { name: "Blog", href: "/blog" },
         { name: "About", href: "/about" },

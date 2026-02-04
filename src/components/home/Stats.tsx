@@ -9,10 +9,10 @@ export default function Stats() {
                 </div>
 
                 <div className="grid grid-cols-2 gap-8 lg:grid-cols-4 mb-16">
-                    <StatItem value="2M+" label="Customers Empowered" />
+                    <StatItem value="4000+" label="Customers Empowered" />
                     <StatItem value="30+" label="Lending Networks" />
-                    <StatItem value="₹20B+" label="Credit Enabled" />
-                    <StatItem value="250+" label="Cities Active" />
+                    <StatItem value="₹1000cr+" label="Credit Enabled" />
+                    <StatItem value="50+" label="Cities Active" />
                 </div>
 
                 <div className="h-px bg-gradient-to-r from-transparent via-gray-200 to-transparent my-12"></div>
