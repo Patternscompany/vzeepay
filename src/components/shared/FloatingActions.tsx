@@ -28,7 +28,7 @@ export default function FloatingActions() {
     };
 
     return (
-        <div className="fixed bottom-20 right-6 z-50 flex flex-col gap-4 items-center">
+        <div className="fixed bottom-15 right-6 z-50 flex flex-col gap-4 items-center">
             {/* Scroll to Top Button */}
             <button
                 onClick={scrollToTop}
