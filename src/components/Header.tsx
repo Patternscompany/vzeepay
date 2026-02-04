@@ -31,7 +31,7 @@ export default function Header() {
 
     return (
         <>
-            <header className={`fixed inset-x-0 z-[100] w-full transition-all duration-200 ${scrolled ? "bg-white/95 backdrop-blur-lg shadow-md" : "bg-white"} border-b border-gray-200`}>
+            <header className={`fixed inset-x-0 z-[100] w-full md:transition-all md:duration-200 ${scrolled ? "bg-white/95 backdrop-blur-lg shadow-md" : "bg-white"} border-b border-gray-200`}>
                 <nav className="container-custom flex items-center justify-between py-4 relative z-[100]">
                     {/* Logo */}
                     <Link to="/" className="flex items-center gap-2">
@@ -41,7 +41,7 @@ export default function Header() {
                             alt="VZEEPAY Logo"
                             width={280}
                             height={70}
-                            className="h-12 w-auto"
+                            className="h-12 w-auto transition-none"
                         />
                     </Link>
 
