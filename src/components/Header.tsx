@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function Header() {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -35,14 +36,16 @@ export default function Header() {
                 <nav className="container-custom flex items-center justify-between py-4 relative z-[100]">
                     {/* Logo */}
                     <Link to="/" className="flex items-center gap-2">
-                        {/* Using the text logo approach if image doesn't match perfectly, or keeping image if it is the full logo */}
-                        <img
-                            src={`${import.meta.env.BASE_URL}images/logo2.png`}
-                            alt="VZEEPAY Logo"
-                            width={280}
-                            height={70}
-                            className="h-12 w-auto transition-none"
-                        />
+                        <motion.div layoutId="logo-container">
+                            <motion.img
+                                layoutId="main-logo"
+                                src={`${import.meta.env.BASE_URL}images/logo2.png`}
+                                alt="VZEEPAY Logo"
+                                width={280}
+                                height={70}
+                                className="h-12 w-auto transition-none"
+                            />
+                        </motion.div>
                     </Link>
 
                     {/* Desktop Navigation */}
