@@ -27,7 +27,7 @@ export default function About() {
                             <h2 className="text-3xl font-bold mb-6 text-gray-900">Redefining Financial Access</h2>
                             <div className="space-y-4 text-gray-600 text-lg leading-relaxed">
                                 <p>
-                                    Founded in 2018, VZEEPAY began with a singular vision: to bridge the gap between complex financial institutions and the everyday Indian. We believed that getting a loan or investing should be as simple as ordering a pizza.
+                                    Founded in 2018, VZEEPAY began with a singular vision to bridge the gap between complex financial institutions and the everyday Indian. We believed that getting a loan or investing should be as simple as ordering a pizza.
                                 </p>
                                 <p>
                                     Fast forward to today, we are India's fastest-growing fintech platform, trusted by 5 million+ customers. By leveraging AI and partnerships with 90+ top banks, we've removed the paperwork, the waiting, and the varying interest rates.
