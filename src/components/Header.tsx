@@ -84,7 +84,7 @@ export default function Header() {
                                             <div>
                                                 <h3 className="font-semibold text-gray-900 mb-4">Home Loans</h3>
                                                 <ul className="space-y-3 text-sm text-gray-600">
-                                                    <li><Link to="/loans/home-loan" className="hover:text-primary transition-colors block">Best Home Loan Rates</Link></li>
+                                                    <li><Link to="/loans/home-loan" className="hover:text-primary transition-colors block">Home Loan</Link></li>
                                                     <li><Link to="/loans/loan-against-property" className="hover:text-primary transition-colors block">Loan Against Property</Link></li>
                                                     <li><Link to="/loans/balance-transfer" className="hover:text-primary transition-colors block">Balance Transfer</Link></li>
                                                     <li><Link to="/loans/top-up-loan" className="hover:text-primary transition-colors block">Top-up Loan</Link></li>
